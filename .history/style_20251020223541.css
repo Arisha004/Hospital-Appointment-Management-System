@@ -1,0 +1,118 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #0077b6;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #0077b6;
+}
+
+/* Split Landing Section */
+.landing {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Text Section */
+.landing .left {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 70px;
+  background: #fefefe;
+}
+
+.landing .left h1 {
+  font-size: 2.2rem;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.landing .left p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn {
+  background: #0077b6;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #023e8a;
+}
+
+/* Right Image Section */
+.landing .right {
+  flex: 1.5;
+  background:url(images/pic1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing .right::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  font-size: 0.9rem;
+  color: #555;
+}
+
+

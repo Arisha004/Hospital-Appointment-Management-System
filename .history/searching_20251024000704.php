@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+
+        <form action="" method="get">
+<div class="container1">
+
+    <input type="text" name="search" value="<?php echo  $row[$full_name']?>" placeholder="Search here">
+    <button type="submit">Search</button>
+</form>
+
+
+    </body>
+</html>
